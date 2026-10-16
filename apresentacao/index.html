@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VP Loterias / Glaset | Apresentação Executiva</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="ambient-glow top-left"></div>
+  <div class="ambient-glow bottom-right"></div>
+
+  <!-- Header Bar -->
+  <header class="presentation-header">
+    <div class="header-left">
+      <a href="/" class="brand-badge" title="Voltar para a página principal glauciopontes.com.br">
+        <span class="brand-logo">GPP</span>
+        <span class="brand-name">Gláucio Pontes</span>
+      </a>
+      <span class="divider">/</span>
+      <span class="deck-title">VP Loterias • Glaset</span>
+    </div>
+
+    <div class="header-center">
+      <div class="slide-counter">
+        <span id="current-slide-num">01</span>
+        <span class="counter-slash">/</span>
+        <span id="total-slides-num">24</span>
+      </div>
+    </div>
+
+    <div class="header-right">
+      <button id="btn-drawer" class="header-btn" title="Abrir sumário dos 24 slides (M ou I)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        <span>Índice</span>
+      </button>
+      <button id="btn-fullscreen" class="header-btn icon-only" title="Alternar modo Tela Cheia (F)">
+        <svg id="fs-enter-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"></path></svg>
+        <svg id="fs-exit-icon" class="hidden" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Progress Bar -->
+  <div class="progress-container">
+    <div id="progress-bar" class="progress-fill" style="width: 4.16%;"></div>
+  </div>
+
+  <!-- Main Slide Viewport -->
+  <main class="presentation-main">
+    <div id="slides-container" class="slides-stage">
+      <!-- Slides will be injected dynamically by script.js -->
+    </div>
+  </main>
+
+  <!-- Navigation Controls -->
+  <footer class="presentation-footer">
+    <button id="btn-prev" class="nav-btn" title="Slide anterior (← ou Backspace)">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      <span>Anterior</span>
+    </button>
+
+    <div class="quick-dots" id="quick-dots"></div>
+
+    <button id="btn-next" class="nav-btn primary" title="Próximo slide (→ ou Espaço)">
+      <span>Próximo</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    </button>
+  </footer>
+
+  <!-- Sidebar Index Drawer -->
+  <aside id="index-drawer" class="index-drawer">
+    <div class="drawer-header">
+      <div class="drawer-title">
+        <h3>Índice dos Slides</h3>
+        <span class="drawer-subtitle">24 slides executivos</span>
+      </div>
+      <button id="btn-close-drawer" class="close-btn" title="Fechar (Esc)">✕</button>
+    </div>
+    <div class="drawer-content" id="drawer-list">
+      <!-- Drawer items populated by JS -->
+    </div>
+  </aside>
+  <div id="drawer-backdrop" class="drawer-backdrop"></div>
+
+  <!-- Zoom Lightbox Modal -->
+  <div id="zoom-modal" class="zoom-modal">
+    <div class="zoom-toolbar">
+      <span id="zoom-caption" class="zoom-caption"></span>
+      <button id="zoom-close-btn" class="zoom-close" title="Fechar (Esc)">✕ Fechar</button>
+    </div>
+    <div class="zoom-body">
+      <img id="zoom-img" class="zoom-img" src="" alt="Imagem Ampliada" />
+    </div>
+  </div>
+
+  <script src="slides.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
