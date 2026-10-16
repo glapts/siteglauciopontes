@@ -7,7 +7,7 @@ const SLIDES_DATA = [
     "subtitle": "Controle financeiro do jogo do bicho: visibilidade para a dona da banca e conferência para quem fecha o mês.",
     "author": "Gláucio Pires Pontes",
     "tag": "Capa",
-    "logo": "assets/images/image1.png",
+    "logo": "/apresentacao/assets/images/image1.png",
     "highlights": [
       "Apuração e Prevenção de Desvios",
       "Plataforma Completa",
@@ -47,8 +47,8 @@ const SLIDES_DATA = [
     "title": "O site reúne resultados e acesso aos módulos",
     "subtitle": "Visão geral com navegação intuitiva, resultados do dia, estatísticas e percurso aos módulos operacionais.",
     "tag": "Vídeo • 0:50",
-    "video": "assets/videos/site.mp4",
-    "poster": "assets/images/image2.jpg",
+    "video": "/apresentacao/assets/videos/site.mp4",
+    "poster": "/apresentacao/assets/images/image2.jpg",
     "duration": "0:50",
     "cards": [
       {
@@ -75,7 +75,7 @@ const SLIDES_DATA = [
     "title": "Resultados do dia em uma única consulta",
     "subtitle": "Extrações organizadas cronologicamente por horário, exibindo milhar, grupo e o resumo oficial da Federal.",
     "tag": "Resultados",
-    "image": "assets/images/image3.png",
+    "image": "/apresentacao/assets/images/image3.png",
     "caption": "Interface de consulta rápida de resultados diários e horários de extração",
     "cards": [
       {
@@ -102,7 +102,7 @@ const SLIDES_DATA = [
     "title": "Histórico para consultar os resultados anteriores",
     "subtitle": "Ferramenta de pesquisa por período para apoiar a conferência retrospectiva de qualquer extração passada.",
     "tag": "Histórico",
-    "image": "assets/images/image4.png",
+    "image": "/apresentacao/assets/images/image4.png",
     "caption": "Histórico retroativo de extrações com filtro dinâmico de datas",
     "cards": [
       {
@@ -129,7 +129,7 @@ const SLIDES_DATA = [
     "title": "Estatísticas por grupo e por extração",
     "subtitle": "Frequências e atrasos do período consultado. Auxilia apostadores e permite análises detalhadas de recorrência.",
     "tag": "Estatísticas",
-    "image": "assets/images/image5.png",
+    "image": "/apresentacao/assets/images/image5.png",
     "caption": "Relatório estatístico de frequência e atraso por grupo e modalidade",
     "cards": [
       {
@@ -156,7 +156,7 @@ const SLIDES_DATA = [
     "title": "Mapa de calor das dezenas",
     "subtitle": "Visualização gráfica da frequência das dezenas de 00 a 99 em todas as extrações registradas no histórico.",
     "tag": "Mapa de Calor",
-    "image": "assets/images/image6.png",
+    "image": "/apresentacao/assets/images/image6.png",
     "caption": "Mapa de calor das dezenas de 00 a 99 indicando densidade de saídas",
     "cards": [
       {
@@ -183,8 +183,8 @@ const SLIDES_DATA = [
     "title": "A operação do cambista: do acesso à cobrança",
     "subtitle": "Demonstração real do acesso via WhatsApp, seleção de modalidades, fechamento do bilhete e conferência de repasse.",
     "tag": "Vídeo • 1:57",
-    "video": "assets/videos/cambista.mp4",
-    "poster": "assets/images/image7.jpg",
+    "video": "/apresentacao/assets/videos/cambista.mp4",
+    "poster": "/apresentacao/assets/images/image7.jpg",
     "duration": "1:57",
     "cards": [
       {
@@ -211,8 +211,8 @@ const SLIDES_DATA = [
     "title": "A gestão acompanha o consolidado da banca",
     "subtitle": "Painel executivo com indicadores globais, filtros por período e emissão instantânea de relatórios em Excel e PDF.",
     "tag": "Vídeo • 1:12",
-    "video": "assets/videos/superadmin.mp4",
-    "poster": "assets/images/image8.jpg",
+    "video": "/apresentacao/assets/videos/superadmin.mp4",
+    "poster": "/apresentacao/assets/images/image8.jpg",
     "duration": "1:12",
     "cards": [
       {
@@ -239,7 +239,7 @@ const SLIDES_DATA = [
     "title": "A conferência precisa chegar ao responsável",
     "subtitle": "Identificação clara da estrutura de cobrança: relacionamento entre gerentes, equipes de cambistas e resultados individuais.",
     "tag": "Auditoria",
-    "image": "assets/images/image9.png",
+    "image": "/apresentacao/assets/images/image9.png",
     "caption": "Visão consolidada por gerência, ranking de pontos de venda e comissões",
     "cards": [
       {
@@ -266,7 +266,7 @@ const SLIDES_DATA = [
     "title": "Fechamento mensal com um período definido",
     "subtitle": "Uso de janelas consistentes de apuração para equalizar relatórios contábeis, extratos bancários e liquidações.",
     "tag": "Fechamento",
-    "image": "assets/images/image10.png",
+    "image": "/apresentacao/assets/images/image10.png",
     "caption": "Filtros temporais pré-configurados: Hoje, 7 Dias, 30 Dias e Este Mês",
     "cards": [
       {
@@ -293,7 +293,7 @@ const SLIDES_DATA = [
     "title": "Excel para conferir os números do fechamento",
     "subtitle": "Planilhas detalhadas com apuração da arrecadação bruta, prêmios pagos, comissões e lucro líquido retido pela banca.",
     "tag": "Excel",
-    "image": "assets/images/image11.jpeg",
+    "image": "/apresentacao/assets/images/image11.jpeg",
     "caption": "Modelo de planilha exportada para conciliação financeira minuciosa",
     "cards": [
       {
@@ -320,7 +320,7 @@ const SLIDES_DATA = [
     "title": "PDF para formalizar a prestação de contas",
     "subtitle": "Geração de relatório oficial para arquivo, facilitando a revisão da dona da banca e a formalização com comprovantes.",
     "tag": "PDF",
-    "image": "assets/images/image12.jpeg",
+    "image": "/apresentacao/assets/images/image12.jpeg",
     "caption": "Relatório gerencial em PDF para arquivamento e comprovação contábil",
     "cards": [
       {
@@ -441,15 +441,15 @@ const SLIDES_DATA = [
     "tag": "Módulos Extras",
     "images": [
       {
-        "src": "assets/images/image13.png",
+        "src": "/apresentacao/assets/images/image13.png",
         "title": "Rifa Online"
       },
       {
-        "src": "assets/images/image15.jpeg",
+        "src": "/apresentacao/assets/images/image15.jpeg",
         "title": "VP-Bank Crédito"
       },
       {
-        "src": "assets/images/image14.png",
+        "src": "/apresentacao/assets/images/image14.png",
         "title": "Jogos Adicionais"
       }
     ],
@@ -479,8 +479,8 @@ const SLIDES_DATA = [
     "title": "VP-Bank: demonstração completa do módulo",
     "subtitle": "Simulação de crédito, preenchimento de propostas, gestão de carteira e área exclusiva para o cambista.",
     "tag": "Vídeo • 1:23",
-    "video": "assets/videos/bank.mp4",
-    "poster": "assets/images/image16.jpg",
+    "video": "/apresentacao/assets/videos/bank.mp4",
+    "poster": "/apresentacao/assets/images/image16.jpg",
     "duration": "1:23",
     "cards": [
       {
@@ -507,8 +507,8 @@ const SLIDES_DATA = [
     "title": "Rifa online: números, compradores e registro",
     "subtitle": "Escolha de dezenas na grade, reserva de números, preenchimento de dados do comprador e confirmação do bilhete.",
     "tag": "Vídeo • 1:03",
-    "video": "assets/videos/rifa.mp4",
-    "poster": "assets/images/image17.jpg",
+    "video": "/apresentacao/assets/videos/rifa.mp4",
+    "poster": "/apresentacao/assets/images/image17.jpg",
     "duration": "1:03",
     "cards": [
       {
@@ -535,8 +535,8 @@ const SLIDES_DATA = [
     "title": "Vídeo-loteria: demonstração do jogo adicional",
     "subtitle": "Interface de aposta digital, mecânica interativa de sorteio e integração com cobrança instantânea via PIX.",
     "tag": "Vídeo • 0:35",
-    "video": "assets/videos/videoloteria.mp4",
-    "poster": "assets/images/image18.jpg",
+    "video": "/apresentacao/assets/videos/videoloteria.mp4",
+    "poster": "/apresentacao/assets/images/image18.jpg",
     "duration": "0:35",
     "cards": [
       {
@@ -563,8 +563,8 @@ const SLIDES_DATA = [
     "title": "Caça-níqueis: ficha de jogo e cobrança",
     "subtitle": "Navegação até a sala do jogo, aquisição de fichas com pagamento automatizado e experiência de entretenimento.",
     "tag": "Vídeo • 0:30",
-    "video": "assets/videos/cacaniquel.mp4",
-    "poster": "assets/images/image19.jpg",
+    "video": "/apresentacao/assets/videos/cacaniquel.mp4",
+    "poster": "/apresentacao/assets/images/image19.jpg",
     "duration": "0:30",
     "cards": [
       {
@@ -617,7 +617,7 @@ const SLIDES_DATA = [
     "title": "Apoio voluntário ao site",
     "subtitle": "A tela apresenta canal direto para contribuição voluntária via PIX, sem valor pré-definido ou cobrança recorrente obrigatória.",
     "tag": "Apoio PIX",
-    "image": "assets/images/image20.png",
+    "image": "/apresentacao/assets/images/image20.png",
     "caption": "QR Code para contribuição voluntária via PIX",
     "cards": [
       {
@@ -644,7 +644,7 @@ const SLIDES_DATA = [
     "title": "Contato técnico e comercial",
     "subtitle": "Gláucio P. Pontes — Apresentação da plataforma, implantação de operação piloto e consultoria em controle de bancas.",
     "tag": "Contato",
-    "image": "assets/images/image21.png",
+    "image": "/apresentacao/assets/images/image21.png",
     "author": "Gláucio Pires Pontes",
     "contacts": [
       {

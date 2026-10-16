@@ -263,7 +263,8 @@ html, body {
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
 }
 

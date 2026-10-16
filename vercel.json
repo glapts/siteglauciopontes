@@ -1,6 +1,16 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/apresentacao",
+      "destination": "/apresentacao/index.html"
+    },
+    {
+      "source": "/apresentacao/",
+      "destination": "/apresentacao/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/apresentacao/assets/videos/(.*)",
