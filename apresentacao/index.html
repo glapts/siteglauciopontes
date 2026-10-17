@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <base href="/apresentacao/" />
+  <base id="app-base" href="/apresentacao/" />
+  <script>
+    (function() {
+      var isSubpath = window.location.pathname.startsWith('/apresentacao');
+      var baseEl = document.getElementById('app-base');
+      if (baseEl && !isSubpath) {
+        baseEl.setAttribute('href', '/');
+      }
+    })();
+  </script>
   <title>VP Loterias / Glaset | Apresentação Executiva</title>
   <link rel="stylesheet" href="/apresentacao/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,9 +26,8 @@
   <!-- Header Bar -->
   <header class="presentation-header">
     <div class="header-left">
-      <a href="/" class="brand-badge" title="Voltar para a página principal glauciopontes.com.br">
+      <a href="/" class="brand-badge" title="GPP">
         <span class="brand-logo">GPP</span>
-        <span class="brand-name">Gláucio Pontes</span>
       </a>
       <span class="divider">/</span>
       <span class="deck-title">VP Loterias • Glaset</span>

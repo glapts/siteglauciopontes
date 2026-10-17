@@ -46,7 +46,7 @@
 
     if (data.type === 'hero') {
       return `
-        <div class="slide" id="slide-${idx}">
+        <div class="slide" id="slide-${idx}" data-type="${data.type}">
           <div class="slide-card">
             <div class="slide-hero">
               <div class="hero-logo-box">
@@ -80,7 +80,7 @@
       `).join('');
 
       return `
-        <div class="slide" id="slide-${idx}">
+        <div class="slide" id="slide-${idx}" data-type="${data.type}">
           <div class="slide-card">
             <div class="${badgeClass}">${data.badge}</div>
             <h2 class="slide-title">${data.title}</h2>
@@ -121,7 +121,7 @@
       `).join('');
 
       return `
-        <div class="slide" id="slide-${idx}">
+        <div class="slide" id="slide-${idx}" data-type="${data.type}">
           <div class="slide-card">
             <div class="${badgeClass}">${data.badge}</div>
             <h2 class="slide-title">${data.title}</h2>
@@ -154,7 +154,7 @@
       `).join('');
 
       return `
-        <div class="slide" id="slide-${idx}">
+        <div class="slide" id="slide-${idx}" data-type="${data.type}">
           <div class="slide-card">
             <div class="${badgeClass}">🎥 ${data.badge} &bull; ${data.duration}</div>
             <h2 class="slide-title">${data.title}</h2>
@@ -192,7 +192,7 @@
       `).join('');
 
       return `
-        <div class="slide" id="slide-${idx}">
+        <div class="slide" id="slide-${idx}" data-type="${data.type}">
           <div class="slide-card">
             <div class="${badgeClass}">${data.badge}</div>
             <h2 class="slide-title">${data.title}</h2>
@@ -234,7 +234,7 @@
       `).join('');
 
       return `
-        <div class="slide" id="slide-${idx}">
+        <div class="slide" id="slide-${idx}" data-type="${data.type}">
           <div class="slide-card">
             <div class="${badgeClass}">${data.badge}</div>
             <h2 class="slide-title">${data.title}</h2>
@@ -356,6 +356,7 @@
     slideEls.forEach((el, idx) => {
       el.classList.remove('active', 'prev');
       if (idx === currentSlideIndex) {
+        void el.offsetWidth;
         el.classList.add('active');
       } else if (idx < currentSlideIndex) {
         el.classList.add('prev');

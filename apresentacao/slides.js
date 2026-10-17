@@ -5,7 +5,7 @@ const SLIDES_DATA = [
     "badge": "Apresentação Executiva 2026",
     "title": "VP Loterias / Glaset",
     "subtitle": "Controle financeiro do jogo do bicho: visibilidade para a dona da banca e conferência para quem fecha o mês.",
-    "author": "Gláucio Pires Pontes",
+    "author": "GPP",
     "tag": "Capa",
     "logo": "/apresentacao/assets/images/image1.png",
     "highlights": [
@@ -642,10 +642,10 @@ const SLIDES_DATA = [
     "type": "contact",
     "badge": "Contato Direto",
     "title": "Contato técnico e comercial",
-    "subtitle": "Gláucio P. Pontes — Apresentação da plataforma, implantação de operação piloto e consultoria em controle de bancas.",
+    "subtitle": "GPP — Apresentação da plataforma, implantação de operação piloto e consultoria em controle de bancas.",
     "tag": "Contato",
     "image": "/apresentacao/assets/images/image21.png",
-    "author": "Gláucio Pires Pontes",
+    "author": "GPP",
     "contacts": [
       {
         "icon": "whatsapp",

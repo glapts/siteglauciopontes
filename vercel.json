@@ -3,6 +3,36 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "^(?:www\\.)?getset7\\.com\\.br$"
+        }
+      ],
+      "destination": "/apresentacao/index.html"
+    },
+    {
+      "source": "/(style\\.css|script\\.js|slides\\.js)",
+      "has": [
+        {
+          "type": "host",
+          "value": "^(?:www\\.)?getset7\\.com\\.br$"
+        }
+      ],
+      "destination": "/apresentacao/$1"
+    },
+    {
+      "source": "/assets/:match*",
+      "has": [
+        {
+          "type": "host",
+          "value": "^(?:www\\.)?getset7\\.com\\.br$"
+        }
+      ],
+      "destination": "/apresentacao/assets/:match*"
+    },
+    {
       "source": "/apresentacao",
       "destination": "/apresentacao/index.html"
     },
@@ -13,7 +43,7 @@
   ],
   "headers": [
     {
-      "source": "/apresentacao/assets/videos/(.*)",
+      "source": "/(?:apresentacao/)?assets/videos/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -26,7 +56,7 @@
       ]
     },
     {
-      "source": "/apresentacao/assets/images/(.*)",
+      "source": "/(?:apresentacao/)?assets/images/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
