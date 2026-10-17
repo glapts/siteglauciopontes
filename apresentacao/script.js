@@ -69,15 +69,28 @@
     }
 
     if (data.type === 'contact') {
-      const contactsHtml = data.contacts.map(c => `
-        <a href="${c.link}" target="_blank" rel="noopener noreferrer" class="contact-item">
+      const contactsHtml = data.contacts.map(c => {
+        let label = c.label;
+        let val = c.val;
+        let link = c.link;
+        if (c.icon === 'globe') {
+          const isGetSet = window.location.hostname.toLowerCase().includes('getset7') ||
+                           window.location.pathname.toLowerCase().includes('getset7') ||
+                           window.location.hostname.endsWith('vercel.app');
+          if (isGetSet) {
+            val = window.location.hostname.includes('getset7') ? window.location.hostname : 'getset7.vercel.app';
+            link = `https://${val}`;
+          }
+        }
+        return `
+        <a href="${link}" target="_blank" rel="noopener noreferrer" class="contact-item">
           <div class="contact-icon">${icons[c.icon] || icons.globe}</div>
           <div>
-            <div class="contact-label">${c.label}</div>
-            <div class="contact-val">${c.val}</div>
+            <div class="contact-label">${label}</div>
+            <div class="contact-val">${val}</div>
           </div>
         </a>
-      `).join('');
+      `;}).join('');
 
       return `
         <div class="slide" id="slide-${idx}" data-type="${data.type}">
@@ -332,6 +345,15 @@
           return;
         }
       }
+    }
+
+    // Detect getset7 alias (hostname, pathname, or query) -> defaults directly to Slide 8 (WhatsApp demo)
+    const isGetSet7 = window.location.hostname.toLowerCase().includes('getset7') ||
+                      window.location.pathname.toLowerCase().includes('getset7') ||
+                      window.location.search.toLowerCase().includes('getset7');
+    if (isGetSet7) {
+      goToSlide(7, true); // Slide 8 is index 7
+      return;
     }
 
     goToSlide(0, false);

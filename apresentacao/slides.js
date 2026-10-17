@@ -667,9 +667,9 @@ const SLIDES_DATA = [
       },
       {
         "icon": "globe",
-        "label": "Site Oficial",
-        "val": "www.glauciopontes.com.br",
-        "link": "https://www.glauciopontes.com.br"
+        "label": "Apresentação Online",
+        "val": "getset7.vercel.app",
+        "link": "https://getset7.vercel.app"
       }
     ]
   }

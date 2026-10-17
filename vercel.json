@@ -7,6 +7,16 @@
       "has": [
         {
           "type": "host",
+          "value": "getset7.vercel.app"
+        }
+      ],
+      "destination": "/apresentacao/index.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
           "value": "getset7.com.br"
         }
       ],
@@ -27,6 +37,16 @@
       "has": [
         {
           "type": "host",
+          "value": "getset7.vercel.app"
+        }
+      ],
+      "destination": "/apresentacao/assets/:path*"
+    },
+    {
+      "source": "/assets/:path*",
+      "has": [
+        {
+          "type": "host",
           "value": "getset7.com.br"
         }
       ],
@@ -47,6 +67,16 @@
       "has": [
         {
           "type": "host",
+          "value": "getset7.vercel.app"
+        }
+      ],
+      "destination": "/apresentacao/style.css"
+    },
+    {
+      "source": "/style.css",
+      "has": [
+        {
+          "type": "host",
           "value": "getset7.com.br"
         }
       ],
@@ -67,6 +97,16 @@
       "has": [
         {
           "type": "host",
+          "value": "getset7.vercel.app"
+        }
+      ],
+      "destination": "/apresentacao/script.js"
+    },
+    {
+      "source": "/script.js",
+      "has": [
+        {
+          "type": "host",
           "value": "getset7.com.br"
         }
       ],
@@ -87,6 +127,16 @@
       "has": [
         {
           "type": "host",
+          "value": "getset7.vercel.app"
+        }
+      ],
+      "destination": "/apresentacao/slides.js"
+    },
+    {
+      "source": "/slides.js",
+      "has": [
+        {
+          "type": "host",
           "value": "getset7.com.br"
         }
       ],
@@ -101,6 +151,14 @@
         }
       ],
       "destination": "/apresentacao/slides.js"
+    },
+    {
+      "source": "/getset7",
+      "destination": "/apresentacao/index.html"
+    },
+    {
+      "source": "/getset7/",
+      "destination": "/apresentacao/index.html"
     },
     {
       "source": "/apresentacao",
