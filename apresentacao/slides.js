@@ -650,8 +650,8 @@ const SLIDES_DATA = [
       {
         "icon": "whatsapp",
         "label": "WhatsApp",
-        "val": "11 98181-5079",
-        "link": "https://wa.me/5511981815079"
+        "val": "11 98181-5087",
+        "link": "https://wa.me/5511981815087"
       },
       {
         "icon": "app",
