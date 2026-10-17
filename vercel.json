@@ -7,30 +7,100 @@
       "has": [
         {
           "type": "host",
-          "value": "^(?:www\\.)?getset7\\.com\\.br$"
+          "value": "getset7.com.br"
         }
       ],
       "destination": "/apresentacao/index.html"
     },
     {
-      "source": "/(style\\.css|script\\.js|slides\\.js)",
+      "source": "/",
       "has": [
         {
           "type": "host",
-          "value": "^(?:www\\.)?getset7\\.com\\.br$"
+          "value": "www.getset7.com.br"
         }
       ],
-      "destination": "/apresentacao/$1"
+      "destination": "/apresentacao/index.html"
     },
     {
-      "source": "/assets/:match*",
+      "source": "/assets/:path*",
       "has": [
         {
           "type": "host",
-          "value": "^(?:www\\.)?getset7\\.com\\.br$"
+          "value": "getset7.com.br"
         }
       ],
-      "destination": "/apresentacao/assets/:match*"
+      "destination": "/apresentacao/assets/:path*"
+    },
+    {
+      "source": "/assets/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.getset7.com.br"
+        }
+      ],
+      "destination": "/apresentacao/assets/:path*"
+    },
+    {
+      "source": "/style.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "getset7.com.br"
+        }
+      ],
+      "destination": "/apresentacao/style.css"
+    },
+    {
+      "source": "/style.css",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.getset7.com.br"
+        }
+      ],
+      "destination": "/apresentacao/style.css"
+    },
+    {
+      "source": "/script.js",
+      "has": [
+        {
+          "type": "host",
+          "value": "getset7.com.br"
+        }
+      ],
+      "destination": "/apresentacao/script.js"
+    },
+    {
+      "source": "/script.js",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.getset7.com.br"
+        }
+      ],
+      "destination": "/apresentacao/script.js"
+    },
+    {
+      "source": "/slides.js",
+      "has": [
+        {
+          "type": "host",
+          "value": "getset7.com.br"
+        }
+      ],
+      "destination": "/apresentacao/slides.js"
+    },
+    {
+      "source": "/slides.js",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.getset7.com.br"
+        }
+      ],
+      "destination": "/apresentacao/slides.js"
     },
     {
       "source": "/apresentacao",
@@ -43,7 +113,7 @@
   ],
   "headers": [
     {
-      "source": "/(?:apresentacao/)?assets/videos/(.*)",
+      "source": "/apresentacao/assets/videos/:path*",
       "headers": [
         {
           "key": "Cache-Control",
@@ -56,7 +126,29 @@
       ]
     },
     {
-      "source": "/(?:apresentacao/)?assets/images/(.*)",
+      "source": "/apresentacao/assets/images/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/videos/:path*",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        },
+        {
+          "key": "Accept-Ranges",
+          "value": "bytes"
+        }
+      ]
+    },
+    {
+      "source": "/assets/images/:path*",
       "headers": [
         {
           "key": "Cache-Control",
